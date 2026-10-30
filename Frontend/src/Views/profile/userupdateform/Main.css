@@ -1,0 +1,51 @@
+#edit-main {
+    margin: 1rem;
+}
+#edit-navigate-back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#edit-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding:1.5rem;
+}
+#edit-container p {
+    margin-top: 0.5rem;
+}
+#edit-form {
+    width: 55%;
+    border-radius: 1rem;
+    padding: 0 2rem;
+}
+
+#edit-form label {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-Weight: 500;
+    
+    margin-top: 1.5rem;
+}
+
+#edit-form input {
+    all: unset;
+    border: 2px solid #e5e7eb;
+    padding: 0rem 0.5rem;
+    width: 90%;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-Weight: 400;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-left: none;
+}
+.edit-form-input {
+    display: flex;
+    margin-top: 0.5rem;
+
+}

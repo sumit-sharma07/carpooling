@@ -1,0 +1,35 @@
+#hero-section {
+    height:100vh;
+    background-image: url('../../assets/images/driver_hands_on_wheels.png');
+    background-size: cover;
+}
+#hero-section-curtain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero-section-content {
+    width: 45%;
+    margin-bottom: 10rem;
+}
+#hero-section-content p {
+    margin-bottom: 2.5rem;
+}
+#hero-navigation {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#hero-section-curtain {
+    position: absolute;
+    top: 4.7rem;
+    height: 100vh;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+/* .hero-btn {
+    display: flex;
+    align-items: center;
+} */

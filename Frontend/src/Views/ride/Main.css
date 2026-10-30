@@ -1,0 +1,109 @@
+#ride-details-container {
+    padding: 1rem 2rem;
+}
+#ride-details-navigate-back {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+#ride-details-navigate-back span {
+    cursor: pointer;
+}
+#ride-details-card{
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+#ride-details-card-body {
+    margin-top: 2rem;
+}
+
+#ride-details-card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.ride-details-card-footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border-right: 1px solid #E5E7EB;
+    border-left: 1px solid #E5E7EB;
+    background-color: #cad6e2 ;
+    border-radius: 1rem;
+    padding: 1rem 0;
+}
+
+#driver-details-card {
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+}
+
+#driver-details-card-user {
+    margin: 1rem 0 1.5rem;
+    display: flex;
+    align-items: center;
+
+}
+#driver-details-card-user-trust {
+    display: flex;
+    align-items: center;
+    margin: 0.2rem 0;
+}
+#driver-details-card-user-logo {
+    border-radius: 50%;
+    padding: 1.5rem;
+    margin-right: 1rem
+}
+
+#driver-details-card-model {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    margin: 1rem 0 2rem;
+}
+
+#driver-details-card-model-info {
+    margin-left: 1rem;
+}
+.driver-details-card-contact {
+    display: flex;
+    align-items: center;
+    margin: 0.2rem 0;
+
+}
+
+#booking-details-card {
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+#booking-details-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#booking-details-title-seats{
+    text-align: center;
+}
+#booking-details-select {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0;
+}
+#booking-details-select select {
+    padding: 0.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+#booking-details-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #e5e7eb;
+    padding: 1rem 0;
+    margin: 2rem 0;
+}

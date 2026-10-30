@@ -1,0 +1,48 @@
+#nav-container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    background-color:rgba(246, 249, 250, 0.7);
+    z-index: 100;
+}
+#nav-logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%
+}
+
+#nav-user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#nav-user-loggedin {
+    display: flex;
+    align-items: center;
+    color: #F59E0B;
+    margin-right: 2rem;
+}
+
+#nav-user-loggedin-icon {
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #f1e5d0;
+    margin-right: 1rem;
+    
+}
+#nav-user-loggedin-icon:hover{
+    background-color: #f9e1b6;
+}
+#nav-logo-image{
+    height: 4rem;
+}

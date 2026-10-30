@@ -1,0 +1,74 @@
+#signup-main {
+    margin: 1.5rem 1rem;
+}
+#signup-navigate-back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#signup-radio-grp {
+    margin-top: 5rem;
+}
+#signup-choice p {
+    margin-bottom: 0.5rem;
+}
+#signup-radio-grp input {
+    display: none;
+}
+#signup-radio-grp label {
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 1.5rem; 
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+}
+#signup-radio-grp input:checked + label {
+    background-color: #cad6e2;
+}
+.signup-radio-label-info p{
+    margin-bottom: 0.3rem;
+}
+
+#signup-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding:1.5rem;
+}
+
+#signup-form {
+    width: 55%;
+    border-radius: 1rem;
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+#signup-form label {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-Weight: 500;
+    
+    margin-top: 1.5rem;
+}
+
+#signup-form input {
+    all: unset;
+    border: 2px solid #e5e7eb;
+    padding: 0rem 0.5rem;
+    width: 90%;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-Weight: 400;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-left: none;
+}
+.signup-form-input {
+    display: flex;
+    margin-top: 0.5rem;
+
+}

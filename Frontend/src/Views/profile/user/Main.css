@@ -1,0 +1,109 @@
+.user-container {
+    margin: 1.5rem;
+}
+.user-navigate-back {
+    display: flex;
+    align-items: center;
+
+}
+.user-navigate-back span {
+    cursor: pointer;
+}
+.user-personal-info {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+}
+.user-icon {
+    padding: 2rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    position: relative;
+}
+.user-edit{
+    position: absolute;
+    bottom: -0.2rem;
+    right: -0.5rem;
+    border-radius: 50%;
+    padding:0.2rem;
+    cursor: pointer;
+}
+
+.user-call-info {
+    display: flex;
+    align-items: center;
+}
+.user-email-info {
+    display: flex;
+    align-items: center;
+}
+.user-rating-info {
+
+    display: flex;
+    align-items: center;
+}
+.user-role-info {
+    border-radius: 1rem;
+    padding: 0 0.2rem;
+    background-color: #dbe8f6;
+}
+.user-signout {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-counts {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+.user-count-item {
+    text-align: center;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    width: 50%;
+    background-color: #cad6e2;
+
+}
+.user-item-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.user-ride-search {
+    cursor: pointer;
+}
+.user-ride-search:hover {
+    border-bottom: 2px solid black;
+}
+
+#ride-card {
+    position: relative;
+}
+
+.ride-card-status{
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    border-radius: 1rem;
+    border-top-right-radius:0;
+    border-bottom-left-radius:0;
+    padding: 0.5rem 1rem;
+    background-color: #cad6e2;
+}
+.booking-otp-container {
+    width: 20%;
+    
+}

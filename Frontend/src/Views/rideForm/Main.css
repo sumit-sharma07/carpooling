@@ -1,0 +1,98 @@
+#ride-form-container {
+    padding: 1rem 2rem;
+
+}
+#ride-form-navigate-back {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+#ride-form-navigate-back span {
+    cursor: pointer;
+}
+
+#ride-form-route{
+    margin: 2rem 0;
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 1rem;
+}
+#ride-form-route label {
+    display: block;
+    margin-top: 1.5rem;
+}
+#ride-form-route input {
+    all: unset;
+    width: 95%;
+    border: 2px solid #e5e7eb;
+    border-left: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-Weight: 400;
+}
+.ride-route-input {
+    display: flex;
+    margin-top: 1rem;
+}
+
+#ride-form-ridedetail {
+    margin: 1rem 0;
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 1rem;
+}
+#ride-form-ridedetail label{
+    display: block;
+}
+#ride-form-layer1 {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+#ride-form-layer1 label {
+    margin: 0.6rem 0;
+
+}
+#ride-form-layer1 input {
+    all: unset;
+    border: 2px solid #e5e7eb;
+    border-left: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-Weight: 400;
+}
+#ride-form-layer1 select {
+    border: 2px solid #e5e7eb;
+    border-left: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-Weight: 400;
+    padding-right: 0.5rem; 
+}
+.ride-form-layer1-input {
+    display: flex;
+}
+
+#ride-form-additional-info {
+    margin: 2rem 0;
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 1rem;
+}
+#ride-form-additional-info p {
+    margin-bottom: 0.5rem;
+}
+#ride-form-textarea {
+    width: 95%;
+    padding: 1rem 1.5rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    height: 6rem;
+}
