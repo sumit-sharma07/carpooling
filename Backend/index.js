@@ -13,7 +13,10 @@ env.config();
 
 const app = express();
 
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+    origin: ["http://localhost:5173", "https://carpooling-pi.vercel.app"]
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -31,9 +34,11 @@ app.use('/',(req, res)=> {
 
 
 
-app.listen('5050', () => {
-    console.log("Server started successfully on port 5050.");
-
+// app.listen('5050', () => {
+//     console.log("Server started successfully on port 5050.");
+const PORT = process.env.PORT || 5050;
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server started successfully on port ${PORT}.`);
     // connect to database
     // mongoose.connect('mongodb://127.0.0.1:27017/Carpooling',{ autoIndex: true })
     // .then(console.log('Connected to mongoDb database successfully.'))
