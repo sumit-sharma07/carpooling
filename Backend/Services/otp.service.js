@@ -1,7 +1,7 @@
 const otpModel = require('../Models/otp.model');
 const User = require('../Models/user.model');
 const otpGenerator = require('otp-generator');
-const nodemailer = require('nodemailer');
+// const nodemailer = require('nodemailer');
 const jsonWebToken = require('jsonwebtoken');
 
 const create = async ( data )=>{
@@ -24,23 +24,42 @@ const create = async ( data )=>{
                 specialChars: false,
             });
         };
+const sendOTP = async ( email, otp ) => {
+    const res = await fetch("https://api.brevo.com/v3/smtp/email", {
+        method: "POST",
+        headers: {
+            "api-key": process.env.BREVO_API_KEY,
+            "Content-Type": "application/json",
+            accept: "application/json",
+        },
+        body: JSON.stringify({
+            sender: { name: "Smart Carpooling", email: process.env.SENDER_EMAIL },
+            to: [{ email }],
+            subject: `Your OTP is ${otp}`,
+            htmlContent: `<p>Welcome back <b>${user.name}</b>, login to your account with this OTP.</p><p>Your OTP is <b>${otp}</b></p>`,
+        }),
+    });
 
-        const sendOTP = async ( email, otp ) => {
-            const transporter = nodemailer.createTransport({
-                service: 'gmail',
-                auth:{
-                    user: `${process.env.EMAIL_USER}`,
-                    pass: `${process.env.EMAIL_PASSCODE}`,
-                }
-            });
+    if (!res.ok) {
+        throw new Error("Brevo error: " + (await res.text()));
+    }
+};
+        // const sendOTP = async ( email, otp ) => {
+        //     const transporter = nodemailer.createTransport({
+        //         service: 'gmail',
+        //         auth:{
+        //             user: `${process.env.EMAIL_USER}`,
+        //             pass: `${process.env.EMAIL_PASSCODE}`,
+        //         }
+        //     });
 
-            await transporter.sendMail({
-                from: `${process.env.EMAIL_USER}`,
-                to: email,
-                subject: otp,
-                text: `Welcome back ${user.name} login to your account with this OTP. Your otp is ${otp}`
-            });
-        };
+        //     await transporter.sendMail({
+        //         from: `${process.env.EMAIL_USER}`,
+        //         to: email,
+        //         subject: otp,
+        //         text: `Welcome back ${user.name} login to your account with this OTP. Your otp is ${otp}`
+        //     });
+        // };
 
         // const otp = generateOTP();
         // const response = await otpModel.create({
