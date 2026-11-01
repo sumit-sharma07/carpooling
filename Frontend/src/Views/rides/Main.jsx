@@ -23,7 +23,7 @@ const Main = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true)
-        axios.get(`http://localhost:5050/cp/api/v1/rides/search?pickup=${formData.pickup}&drop=${formData.drop}&seats=${formData.seats}&time=${formData.time}`)
+        axios.get(`/cp/api/v1/rides/search?pickup=${formData.pickup}&drop=${formData.drop}&seats=${formData.seats}&time=${formData.time}`)
         .then( res=> {
             console.log(res.data.data);
             setLoading(false);

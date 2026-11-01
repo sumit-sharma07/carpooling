@@ -70,7 +70,7 @@ const Main = () => {
         if (index === 5 && value) {
             const finalOtp = newOtp.join("");
 
-            axios.post(`http://localhost:5050/cp/api/v1/rides/start`,{
+            axios.post(`/cp/api/v1/rides/start`,{
                 rideId: ride._id,
                 userId: id,
                 passengers,
@@ -85,7 +85,7 @@ const Main = () => {
                 if (res.data.data) {
                     setVerifiedRides(prev => [...prev, rideId]);
 
-                    axios.get(`http://localhost:5050/cp/api/v1/users/${id}`,{
+                    axios.get(`/cp/api/v1/users/${id}`,{
                         headers:{
                             authorization: localStorage.getItem('token')
                         }
@@ -98,7 +98,7 @@ const Main = () => {
                         if(err.response)console.log(err.response.data);
                     });
 
-                    axios.get(`http://localhost:5050/cp/api/v1/users/${id}/bookings`,{
+                    axios.get(`/cp/api/v1/users/${id}/bookings`,{
                         headers:{
                             authorization: localStorage.getItem('token')
                         }
@@ -156,7 +156,7 @@ const Main = () => {
     const handlePublishClick = () => {
         console.log('rides rsponse');
 
-        axios.get(`http://localhost:5050/cp/api/v1/users/${id}/rides`,{
+        axios.get(`/cp/api/v1/users/${id}/rides`,{
             headers:{
                 authorization: localStorage.getItem('token')
             }
@@ -180,7 +180,7 @@ const Main = () => {
     }
 
     useEffect( ()=>{
-        axios.get(`http://localhost:5050/cp/api/v1/users/${id}`,{
+        axios.get(`/cp/api/v1/users/${id}`,{
             headers:{
                 authorization: localStorage.getItem('token')
             }
@@ -193,7 +193,7 @@ const Main = () => {
             if(err.response)console.log(err.response.data);
         });
 
-        axios.get(`http://localhost:5050/cp/api/v1/users/${id}/bookings`,{
+        axios.get(`/cp/api/v1/users/${id}/bookings`,{
             headers:{
                 authorization: localStorage.getItem('token')
             }

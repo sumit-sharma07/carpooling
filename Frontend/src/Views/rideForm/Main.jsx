@@ -30,7 +30,7 @@ const Main = () => {
         e.preventDefault();
         setLoading(true);
         console.log(formData);
-        axios.post('http://localhost:5050/cp/api/v1/rides', formData,{
+        axios.post('/cp/api/v1/rides', formData,{
             headers:{
                 authorization: localStorage.getItem('token')
             }

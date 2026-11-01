@@ -42,7 +42,7 @@ const Navbar = () => {
 
     useEffect(() => {
         if(userId){
-            axios.get(`http://localhost:5050/cp/api/v1/users/${userId}`,{
+            axios.get(`/cp/api/v1/users/${userId}`,{
                 headers:{
                     authorization: localStorage.getItem('token')
                 }

@@ -42,7 +42,7 @@ const Main = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        axios.post('http://localhost:5050/cp/api/v1/users/register', formData)
+        axios.post('/cp/api/v1/users/register', formData)
         .then( res=>{
             console.log(res);
             showAlert("Registration successful.","success");

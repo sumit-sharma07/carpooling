@@ -31,7 +31,7 @@ const Main = () => {
         }
         setLoading(true);
 
-        await axios.post('http://localhost:5050/cp/api/v1/send-otp',{email})
+        await axios.post('/cp/api/v1/send-otp',{email})
         .then(res=>{
             console.log(res);
             showAlert("OTP sent to this email successfully.", "success");

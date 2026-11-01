@@ -51,7 +51,7 @@ const Main = () => {
     const handleBooking = () => {
 
         setLoading(true);
-        axios.post('http://localhost:5050/cp/api/v1/bookings',{
+        axios.post('/cp/api/v1/bookings',{
             cost: rideData.riderCost * bookingSeats,
             seats: bookingSeats,
             rider: userId,
@@ -82,7 +82,7 @@ const Main = () => {
     }
 
     useEffect(()=>{
-        axios.get(`http://localhost:5050/cp/api/v1/rides/${id}`)
+        axios.get(`/cp/api/v1/rides/${id}`)
         .then(res=>{
             console.log(res.data.data);
             // riderDuration = riderDistance / ride.distance * ride.duration;

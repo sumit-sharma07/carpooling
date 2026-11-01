@@ -31,7 +31,7 @@ const OTP = ({ email }) => {
         if (index === 5 && value) {
         const finalOtp = newOtp.join("");
 
-        axios.post('http://localhost:5050/cp/api/v1/verify-otp',{ email, otp: finalOtp})
+        axios.post('/cp/api/v1/verify-otp',{ email, otp: finalOtp})
         .then( res=> {
             console.log(res);
             localStorage.setItem('token',res.data.data.token);
